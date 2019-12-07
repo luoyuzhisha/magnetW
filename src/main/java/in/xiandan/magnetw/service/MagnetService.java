@@ -209,7 +209,7 @@ public class MagnetService {
                     if (nameNotes != null && nameNotes.getLength() > 0) {
                         //少数名称有可能会找到多个 默认取最后一个 比如Nyaa
                         Node nameNote = nameNotes.item(nameNotes.getLength() - 1);
-
+                        
                         String nameValue = nameNote.getTextContent();
                         info.setName(nameValue);
                         //高亮关键字 兼容大小写

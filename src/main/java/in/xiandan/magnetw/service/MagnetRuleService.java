@@ -203,7 +203,7 @@ public class MagnetRuleService {
     }
 
     public String getTrackersString() {
-        if (StringUtils.isEmpty(trackersStr)) {
+        if (StringUtils.isEmpty(trackersStr) && config.trackersEnabled) {
             trackersStr = loadTrackersString();
         }
         return trackersStr;
